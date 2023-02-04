@@ -1,1 +1,28 @@
 codes sem 2 c programing by ruchi mam
+variables
+local 
+global
+                                    # hw- storage clases,number system          
+why c is midle level language 
+what are keywords
+::key words can not be variable name 
+## those who have (paranthesis) at the end are function not keywords
+total keywords are 32 
+## datatype
+--basis
+    --int
+        --short int - 2 bytes
+            --signed
+            --unsigned
+        --int - 4 bytes
+        --long int - 8 bytes
+    --float
+    --char
+        --signed -range is -128 to 127
+            formula  -2^(n-1) to 2^(n-1)-1 
+        --unsigned -range is 0 to 255
+            formula  0 to 2^n-1
+    --double
+--void
+--enum
+--derived
