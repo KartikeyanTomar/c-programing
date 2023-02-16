@@ -1,6 +1,10 @@
 # History of c
-1st first step towards c was taken by Dennis Ritchie>
+
+1st first step towards c was taken by Dennis Ritchie.
 The c language was developed at Bell Labs in 1972 by Dennis Ritchie.
+AT&T(American Telephone and Telegraph) located in USA.
+C is known as mother language of all the modern programming 
+language because most of compilers and kernel's are written in C.
 it was developed as a system programming language to write 
 an operating system called UNIX. 
 
@@ -14,9 +18,65 @@ Compiler is a program which is used to convert the program into machine code.
 C is a midle level language because it is a combination 
 of high level language and low level language.
 
+# variables
+variables are containers for storing data, valueslike numbers's
+and characters.
+
+Variable Scope and types of variable 
+A scope in any programmming is a region of the program where a defined
+variable can have its existance and beyond that variable it can not be 
+accessed. There are three places where variables can be declared in 
+C programming language -:
+
+1. local variables
+    # local variables are declared inside the functions or block
+    # They can be used only by statement that are inside that function
+      or block of code.
+    # local variables are divided into two types
+        1. auto variables
+        2. register variables
+2. Global variables
+    # global variables are declared outside the functions usally on top of program.
+    # global variable hold their value throughout the life time of your program 
+      and they can be acccesed inside any of the functions defined for the program.
+    # global variables are divided into two types
+        1. static variables
+        2. external variables
+        
+3. Formal Parameters-:
+    # they are treated as local variables within a function and they take  percedence over gobal variables.
+    
+# Keywords
+
+# What are keywords?
+1. Keywords are the reserved words which are used to perform a specific task.
+keywords are parts of syntax and they can not be used as an identifier.
+2. key words can not be variable name 
+3. those who have (paranthesis) at the end are function not keywords
+4. we have total 32 keywords in c language
+         
+5. Keywords are divided into two types
+    1. Data type keywords
+    2. Storage class keywords
+6. Data type keywords are used to define the data type of the variable.
+7. Storage class keywords are used to define the storage class of the variable.
+
+# Identifires
+1. Identifires are the names which are used to define the variables, functions, 
+   arrays etc.
+Identifier must be unique. They are created to give a unique name to an entity 
+to identify it during the execution of the program.
 
 
-
+##Difference betweeen keywords and identifiers 
+Keywords
+# a keywords begins with lowercase 
+# it defines the type of entity 
+# it can only have alphabetical characters.
+# it helps in defining a particular property that subsists a computer language. 
+   
+   
+   
 # Structure of c
 1. Header files
     # include <stdio.h> are used to include the header files
@@ -50,40 +110,16 @@ of high level language and low level language.
     # non void functions are functions which return a value
 
 
-# variables
-1. local variables
-    # local variables are declared inside the functions
-    # local variables are divided into two types
-        1. auto variables
-        2. register variables
-2. Global variables
-    # global variables are declared outside the functions
-    # global variables are divided into two types
-        1. static variables
-        2. external variables
-
-# Identifires
-1. Identifires are the names which are used to define the variables, functions, 
-   arrays etc.
 
 
 
-# Keywords
 
-# What are keywords?
-1. Keywords are the reserved words which are used to perform a specific task.
-2. Keywords are divided into two types
-    1. Data type keywords
-    2. Storage class keywords
-3. Data type keywords are used to define the data type of the variable.
-4. Storage class keywords are used to define the storage class of the variable.
 
-5. key words can not be variable name 
-6. those who have (paranthesis) at the end are function not keywords
-7. we have total 32 keywords in c language
-         
+
 
 # datatype
+datatyoes specifies the type of the data that a variable can store such 
+as integer, float, chaarcter.
 1. basis
     1. int
         1. short int - 2 bytes
@@ -99,11 +135,167 @@ of high level language and low level language.
             formula  0 to 2^n-1
     4. double
 2. void
-3. enum
+3. enumeration 
 4. derived
+    1. array
+    2. pointer
+    3. structure
+    4. union
+    
+#  the basic datatypes are integer- based and floating point based. C language 
+#  supports both signed and unsigned literals.
 
-# storage classes
-1. auto
-2. register
-3. static
-4. extern
+Data Type       memory size     Range
+char            1 byte          -128 to 127
+signed char     1 byte          -128 to 127
+unsigned char   1 byte            0 to 255
+
+short           2 byte          -32768 to 32767
+signed short    2 byte          -32767 to 32767
+unsigned short  2 byte           0 to 65535
+
+Int
+short int       2 byte
+
+long int        4 byte
+
+Float           4 byte
+
+Double          8 byte
+
+Long Double     10 byte
+
+
+## Derived Data types 
+the derived data types are basically derived out of the fundamental datatypes.
+a derived datatypes won't typicallly create new datatypes but would add various 
+functionalities to existing once instead.
+
+
+Types of derived datatypes in C
+@ array:- a array basically refers to a sequence of a finite number of dta items 
+  from the same datatypes sharing one common name.
+@ Function:- a function refers to a self contained block of single or multiple 
+  statements. it has its own specified name.
+@ Pointers:- The pointers in C language refers to some special form of variables 
+  that one can use for holding other variable addresses.
+
+
+
+
+#Using [scanf()]
+
+%lf -- double 
+%c  -- char
+%d  -- int
+%f  -- float
+
+
+EXAMPLES
+scanf("%c%d%f%lf",&a,&b,&c,&d)
+
+# For multiple character 
+        char a[30]
+            number in square bracket tells the number of character which could be taken
+1. scanf ("%s",a)
+    does not read character after space
+2. gets(a);
+    read after space also
+3. scanf("%[^\n]c")
+    will read till value given in bracket after (%) and thid value won't be read.
+# By default all return type is int.   
+
+
+# printf()
+-- printf("Hello")
+-- printf can be used anywhere inside variable, loop also in point.
+
+Example 
+--  void main()
+    {
+     printf("%d", printf("Hello World\n"))
+    }
+--  { int l;
+     l=printf("Hello world\n")
+     printf("%d",l)
+     
+output
+        Hello world
+        12
+        this would be the output for both the codes
+      
+-- printf("%6d,%-6d,%06d",234,234,234);
+output:-
+_ _ _234, 234_ _ _,000234
+
+-- printf("%7.3f,%-7.3f,%07.3f,%7.0f,%7.0f",45.5,45.5,45.5,45.5,45.4);
+output:-
+_45.500,45.500_,045.500,_ _ _ _ _46,_ _ _ _ _45
+
+-- printf("%8.2s","GLA")
+output
+_ _ _ _ _ _GL
+
+
+# ESCAPE SEQUENCE
+1. \n  new line
+2. \t  tab
+3. \b  step back and start overwritting
+4. \r  return carrage and start overwritting
+5. \v  vertical moves vertically down
+6. \a  beep, alert, alarm
+7. \\  comments
+8. \h
+
+Examples
+-- printf("jai\ngla")
+output
+jai
+gla
+
+-- printf("jai\tgla")
+output
+jai    gla
+
+-- printf("jai\bgla")
+output
+jagla
+
+-- printf("jaii\rgla")
+output
+glai
+
+-- printf("jai\vgla")
+output
+jai
+   gla
+
+-- printf("jai\agla")
+output
+beep would be heard
+
+-- printf("\\n")
+output
+\n
+
+-- printf("\"hello\"")
+output
+"hello"
+
+-- printf("%%d")
+output
+%d
+
+
+Questions
+Q1. printf("jai gla \nhello gla\bhello \rworld");
+output
+ jai gla
+ world glhello
+ 
+Q2. print("my\vname\vis\vriya\");
+output
+ error coz double cotes are not closed.
+
+
+     
