@@ -298,4 +298,54 @@ output
  error coz double cotes are not closed.
 
 
-     
+# Operators
+1. Unary
+example:- ++i,-i
+
+2. Binary
+example:- A+B,A-B
+
+
+# Operators
+--Arithmatic
+    +,-,*,/,%
+    here we need two operants
+Note:- in case of % sign of numerator is taken only and sign of denominator
+        is not considered.
+       
+       % sign does not work with float and double.
+       
+    # priority of (+,-) is same and (*,/,%) is same 
+      but (+,-) have less priority than others.
+--Relational
+    they have less priority than arithmatic operator.
+    >,<,>=,<=,!=,==
+    They give ans in true and false where true is 1 and false is 0.
+--Assignment
+    they have less  priority than relational operator.
+--Logical operator
+--Bitwise
+--Conditional
+--Increment/Decrement
+    (++,--)
+    a++ (post increment)
+    ++a (pre increment)
+    a-- (post decrement)
+    --a (pre decrement)
+example 
+int a=5,k;
+k== a++;  or  k=++a;
+printf("%d%d",a,k);
+
+output
+    5,5  or 5,6
+                   7   6   5   4
+printf("%d%d%d%d",++a,a++,++a,a--);
+                   7   5   7   5
+note:- in case of post increment printf evaluate and printf
+       but for pre increment it only evalute.
+output:-
+        7575
+
+--size of operator
+--Comma
