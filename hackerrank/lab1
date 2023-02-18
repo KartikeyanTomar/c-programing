@@ -1,0 +1,158 @@
+#########ASCII VALUE:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+  
+    char a;
+    scanf("%c",&a);
+    printf("%d",a);
+    return 0;
+}
+
+
+#########Floor and Ceil:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float a;
+    scanf("%f",&a);
+    printf("%f \n",floor(a));
+    printf("%f",ceil(a));
+    return 0;
+}
+
+
+##########Feet to Inches:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a;
+    scanf("%d",&a);
+    printf("%d",a*12);
+    return 0;
+}
+
+
+###########Divisibility Check :
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    if(a%b==0 && a%c==0)
+    {
+        printf("Yes.");
+    }
+    else
+    {
+        printf("No.");
+    }
+    return 0;
+}
+
+
+###########Vowel and Consonents:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+
+     char a;
+    scanf("%c",&a);
+    if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u' || a=='A' || a=='E' || a=='I' || a=='O' || a=='U')
+    {
+        printf("Vowel.");
+    }
+    else if (!isalpha(a))
+    {
+        printf("Not an alphabet.");
+    }
+    else
+    {
+        printf("Consonant.");
+    }
+    return 0;
+}
+
+
+############Swapping:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+ 
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("%d %d",a,b);
+    return 0;
+}
+
+
+########3products of two numbers:
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("%d",a*b);
+    return 0;
+}
+
+##########Maths_fun:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ 
+    float a,b,c;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
+    printf("%f \n",pow(a,b));
+    printf("%f",sqrt(c));
+    return 0;
+}
