@@ -39,7 +39,7 @@ C programming language -:
     # global variables are declared outside the functions usally on top of program.
     # global variable hold their value throughout the life time of your program 
       and they can be acccesed inside any of the functions defined for the program.
-    # global variables are divided into two types
+    # global variables are divided into two types  
         1. static variables
         2. external variables
         
