@@ -1,0 +1,111 @@
+# History of c
+1st first step towards c was taken by Dennis Ritchie>
+The c language was developed at Bell Labs in 1972 by Dennis Ritchie.
+it was developed as a system programming language to write 
+an operating system called UNIX. 
+
+# Interpreter
+Interpreter is a program which is used to execute the program line by line.
+
+# Compiler
+Compiler is a program which is used to convert the program into machine code.
+
+# why c is midle level language
+C is a midle level language because it is a combination 
+of high level language and low level language.
+
+
+
+
+# Structure of c
+1. Header files
+    # include <stdio.h> are used to include the header files
+    other headers are also used like math and string etc.
+2. Global variables
+    # global variables are declared outside the main functions
+    # Value of global variable is zero by default 
+    # value of normal variable is zero. 
+3. Functions
+    # functions are declared outside the main functions
+    # functions are used to perform a specific task
+    # functions are divided into two types
+        1. user defined functions
+        2. library functions
+    # library functions are predefined functions
+    # user defined functions are functions which are defined by the user
+4. Main function
+    # main function is the starting point of the program
+    # main function is the only function which is not called
+    # main function is divided into two parts
+        1. pre defined part
+        2. user defined part
+    # pre defined part is the part which is already defined
+    # user defined part is the part which is defined by the user
+5. sub functions
+    # sub functions are functions which are called inside the main function
+    # sub functions are divided into two types
+        1. void functions
+        2. non void functions
+    # void functions are functions which do not return any value
+    # non void functions are functions which return a value
+
+
+# variables
+1. local variables
+    # local variables are declared inside the functions
+    # local variables are divided into two types
+        1. auto variables
+        2. register variables
+2. Global variables
+    # global variables are declared outside the functions
+    # global variables are divided into two types
+        1. static variables
+        2. external variables
+
+# Identifires
+1. Identifires are the names which are used to define the variables, functions, 
+   arrays etc.
+
+
+
+# Keywords
+
+# What are keywords?
+1. Keywords are the reserved words which are used to perform a specific task.
+2. Keywords are divided into two types
+    1. Data type keywords
+    2. Storage class keywords
+3. Data type keywords are used to define the data type of the variable.
+4. Storage class keywords are used to define the storage class of the variable.
+
+5. key words can not be variable name 
+6. those who have (paranthesis) at the end are function not keywords
+7. we have total 32 keywords in c language
+         
+
+# datatype
+1. basis
+    1. int
+        1. short int - 2 bytes
+            --signed
+            --unsigned
+        2. int - 4 bytes
+        3. long int - 8 bytes
+    2. float
+    3. char
+        1. signed -range is -128 to 127
+            formula  -2^(n-1) to 2^(n-1)-1 
+        2. unsigned -range is 0 to 255
+            formula  0 to 2^n-1
+    4. double
+2. void
+3. enum
+4. derived
+
+# storage classes
+1. auto
+2. register
+3. static
+4. extern
+
+
