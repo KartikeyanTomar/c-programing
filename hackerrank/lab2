@@ -1,0 +1,293 @@
+## profit or loss
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    float cp,sp,profit,loss;
+    float percent1,percent2;
+
+    scanf("%f",&cp);
+    scanf("%f",&sp);
+    loss=cp-sp;
+        percent1=(loss/cp)*100;
+            profit=sp-cp;
+        percent2=(profit/cp)*100;
+    if(cp>sp){
+        
+        printf("Loss\n");
+        printf("%.2f%%",percent1);}
+    else{
+
+        printf("Profit\n");
+        printf("%.2f%%",percent2);}
+    return 0;
+}
+
+
+## wish me 
+int main() {
+    #include <stdio.h>
+    int h,m;
+    scanf("%d%d",&h,&m);
+    if(h>=4&&h>=11)
+    {
+        printf("Good Morning");
+    }
+    else if (h>=12&&h<=15)
+    {
+        printf("Good Afternoon");
+    }
+    else if (h>=16&&h<=20)
+    {
+        printf("Good Evening");
+    }
+    else if(h>=21&&h<=3)
+    {
+        printf("Good Night");
+    }
+    return 0;
+    
+}
+
+## Trip or not
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n, s, c, h, l, t;
+    scanf("%d%d%d%d%d%d", &n, &s, &c, &h, &l, &t);
+    if(s*c*h<=(n-l)*t){
+        printf("Goa Jaayenge");
+    }
+    else{
+        printf("Padhai Karenge");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Funny or not 
+
+int main() {
+    int n, b, g, i, d;
+    scanf("%d%d%d%d%d", &n, &b, &g, &i, &d);
+    int al = (b * i) - (g * d);
+    if(al<0){
+        printf("Funny Questions");
+    }
+    else if(al>0){
+        printf("Simple Questions");
+    }
+    else{
+        printf("God Knows!");
+    }
+return 0;
+}
+
+
+## find the operator
+
+# include <stdio.h>
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(c==a+b)
+    {
+    printf("+");    
+    }
+    else if (c==a-b)
+    {
+    printf("-");
+    }
+    else if (c==a*b)
+    {
+        printf("*");
+    }
+    else if (c==a/b)
+    {
+        printf("/");
+    }
+    else if (c==a%b)
+    {
+        printf("%%");
+    }
+    return 0;
+}
+
+###probability of buying phone 
+
+#include <stdio.h>
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int p1, p2, p3, a;
+    scanf("%d%d%d%d", &p1, &p2, &p3, &a);
+    float r1 = 0, r2 = 0, r3 = 0;
+    if(p1<=a && p2<=a && p3<=a){
+        r1 = 0.333;
+        r2 = 0.333;
+        r3 = 0.333;
+    }
+    else if(p1>a && p2>a && p3>a){
+        r1 = 0.000;
+        r2 = 0.000;
+        r3 = 0.000;
+    }
+    else if(p2>a && p3>a){
+        r1 = 1.000;
+        r2 = 0.000;
+        r3 = 0.000;
+    }
+    else if(p1>a && p3>a){
+        r1 = 0.000;
+        r2 = 1.000;
+        r3 = 0.000;
+    }
+    else if(p1>a && p2>a){
+        r1 = 0.000;
+        r2 = 0.000;
+        r3 = 1.000;
+    }
+    else if(p1>a){
+        r1 = 0.000;
+        r2 = 0.500;
+        r3 = 0.500;
+    }
+    else if(p2>a){
+        r1 = 0.500;
+        r2 = 0.000;
+        r3 = 0.500;
+    }
+    else if(p3>a){
+        r1 = 0.500;
+        r2 = 0.500;
+        r3 = 0.000;
+    }
+    printf("%.3f\n%.3f\n%.3f", r1, r2, r3);
+    return 0;
+}
+
+
+##  largest among numbers
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+        int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    {
+    printf("%d",a);
+    }
+    else if (b>a&&b>c)
+    {
+    printf("%d",b);
+    }
+    else
+    {
+        printf("%d",c);
+    }
+    return 0;
+}
+
+
+## product of two numbers
+
+
+#include <stdio.h>
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("%d",a*b);
+    return 0;
+}
+
+## Days in 2 month
+
+# include <stdio.h>
+int main()
+{
+    int month;
+    scanf("%d",&month);
+    switch (month)
+    {
+    case 1:
+        printf("%d",31);
+        break;
+    case 2:
+        printf("%d",28);
+        break;
+    case 3:
+        printf("%d",31);
+        break;      
+    case 4:
+        printf("%d",30);
+        break;
+    case 5:
+        printf("%d",31);
+        break;
+    case 6:
+        printf("%d",30);
+        break;
+    case 7:
+        printf("%d",31);
+        break;
+    case 8:
+        printf("%d",31);
+        break;
+    case 9:
+        printf("%d",30);
+        break;
+    case 10:
+        printf("%d",31);
+        break;
+    case 11:
+        printf("%d",30);
+        break;
+    case 12:
+        printf("%d",31);
+        break;
+
+    
+    default:
+        printf("Wrong month value.");
+        break;
+    }
+}
+
+## Valid triangles
+
+# include <stdio.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int a,b,c;
+        scanf("%d%d%d",&a,&b,&c);
+        if(a+b+c==180)
+        {
+        printf("YES \n");
+        }
+        else
+        {
+        printf("NO \n");
+        }
+    }
+    return 0;
+}
