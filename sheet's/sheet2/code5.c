@@ -2,6 +2,19 @@
 # include <stdio.h>
 int main()
 {
+    char a,b;
+    scanf("%c", &a);
+    b=("%d",a);
+    (b>=65 && b<=90) || (b>=97 && b<=122) ? printf("It is an alphabet") : printf("It is not an alphabet");
+    return 0;
+}
+
+
+
+
+/*{
+    by if else
+    
     int a,b;
     scanf("%c",&a);
     b=("%d",a);
@@ -15,3 +28,4 @@ int main()
     }
     return 0;
 }
+*/
