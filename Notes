@@ -390,4 +390,77 @@ Output
 8
 
 
+Type of operator
+sizeof() is a compile-time operator. compile time refers to the time at which the source code is converted to a binary code. It doesn’t execute (run) the code inside (). 
+
+Example:
+
+
+// C Program to illustrate
+// that the 'sizeof' operator
+// is a 'compile time operator'
+#include <stdio.h>
+ 
+int main(void)
+{
+    int y;
+    int x = 11;
+ 
+    // value of x doesn't change
+    y = sizeof(x++);
+ 
+    // prints 4 and 11
+    printf("%i %i", y, x);
+ 
+    return (0);
+}
+Output
+4 11
+
+## Need of Sizeof 
+1. To find out the number of elements in an array: Sizeof can be used to calculate the number of elements of the array automatically. 
+
+Example:
+
+
+// C Program
+// demonstrate the method
+// to find the number of elements
+// in an array
+#include <stdio.h>
+int main()
+{
+    int arr[] = { 1, 2, 3, 4, 7, 98, 0, 12, 35, 99, 14 };
+    printf("Number of elements:%lu ",
+           sizeof(arr) / sizeof(arr[0]));
+    return 0;
+}
+Output
+Number of elements:11 
+
+
+2. To allocate a block of memory dynamically: sizeof is greatly used in dynamic memory allocation. For example, if we want to allocate memory that is sufficient to hold 10 integers and we don’t know the sizeof(int) in that particular machine. We can allocate with the help of sizeof. 
+
+Syntax:
+
+int* ptr = (int*)malloc(10 * sizeof(int));
+
+--Conditional operator 
+
+Expresion|-----  Non Zero is true
+Condition|-----  Zero is false
+Statement|-----
+
+Syntax
+Condition? expression1:expression2;
+Example a%2==0?printf("even"):("odd");
+
+Nested conditional operator
+Example:
+a>c && a>b?printf("a is given"):b>c?printf("b"): printf("c");
+
+Question
+Write a program to check weather no is negative,positive or zero?
+n==0 ? printf("zero"):n>0? printf("positive"):printf("negative");
+
 --Comma
