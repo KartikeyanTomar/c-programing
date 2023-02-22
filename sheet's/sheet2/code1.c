@@ -8,7 +8,7 @@ int main()
     a>b && a>c ? printf("Maximum is %d",a): b>c ? printf("Maximum is %d",b) : printf("Maximum is %d",c);
     return 0;
 }
-
+---------------------------------------------------------------------------------------------------
 /*
 By if else
 {
