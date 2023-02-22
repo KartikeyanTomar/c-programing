@@ -4,6 +4,18 @@ int main()
 {
     int a;
     scanf("%d",&a);
+    a%2==0 ? printf("even") : printf("odd");
+    return 0;
+}
+
+
+
+/*
+{
+    by if else
+    
+    int a;
+    scanf("%d",&a);
     if (a%2==0)
     {
         printf("the no. is even");
@@ -15,3 +27,4 @@ int main()
 
         return 0;
 }
+*/
