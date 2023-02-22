@@ -4,6 +4,14 @@
 int main()
 {
     int a,b,c;
+    scanf("%d%d%d", &a,&b,&c);
+    a>b && a>c ? printf("Maximum is %d",a): b>c ? printf("Maximum is %d",b) : printf("Maximum is %d",c);
+    return 0;
+}
+/*
+by if else
+{
+    int a,b,c;
     scanf("%d%d%d",&a,&b,&c);
     if (a>b && a>c)
     {
@@ -18,4 +26,4 @@ int main()
         printf("max no. is %d",c);
     }
     return 0 ;
-}
+}*/
