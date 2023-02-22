@@ -2,6 +2,19 @@
 #include <stdio.h>
 int main()
 {
+    int year;
+    scanf("%d", &year);
+    year % 400 == 0 || year % 4 == 0 ? printf("It is a leap year") : printf("It is not a leap year");
+    return 0;
+}
+
+
+
+
+
+/*
+    by if else
+  {
     int a;
     scanf("%d",&a);
     if (a%4==0 || a%400)
@@ -20,3 +33,4 @@ int main()
         return 0;
     
 }
+*/
