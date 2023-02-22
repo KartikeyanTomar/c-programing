@@ -347,5 +347,47 @@ note:- in case of post increment printf evaluate and printf
 output:-
         7575
 
---size of operator
+--sizeof operator
+    sizeof() operator is used in different ways according to the operand type.  
+    1. When the operand is a Data Type: 
+       When sizeof() is used with the data types such as int,
+       float, char… etc it simply returns the amount of memory 
+       allocated to that data types. 
+
+Example:
+    // Size of operators
+#include <stdio.h>
+int main()
+{
+    printf("%lu\n", sizeof(char));
+    printf("%lu\n", sizeof(int));
+    printf("%lu\n", sizeof(float));
+    printf("%lu", sizeof(double));
+    return 0;
+}
+Output
+1
+4
+4
+8
+
+2. When the operand is an expression: 
+   When sizeof() is used with the expression, it returns the size of the expression. 
+
+Example:
+
+
+// operand as expression
+#include <stdio.h>
+int main()
+{
+    int a = 0;
+    double d = 10.21;
+    printf("%lu", sizeof(a + d));
+    return 0;
+}
+Output
+8
+
+
 --Comma
