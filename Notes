@@ -322,7 +322,14 @@ Note:- in case of % sign of numerator is taken only and sign of denominator
     >,<,>=,<=,!=,==
     They give ans in true and false where true is 1 and false is 0.
 --Assignment
-    they have less  priority than relational operator.
+    Assignment operators have the least priority.
+    example:-
+        int a=5 ;
+        a= i++; this will return 6
+        i++ =a
+        6=a  for these both error will be generated 
+                named :L value required
+        
 --Logical operator
 --Bitwise
 --Conditional
