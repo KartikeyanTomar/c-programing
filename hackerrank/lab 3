@@ -1,0 +1,131 @@
+####  You want some loan and a bank is ready to give you loan on simple interest. 
+      It is given that when you will return the amount, you will return amount which 
+      is twice of principal amount. Bank has given you rate R . You have to find the 
+      time after which you will be returning the total amount
+      
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float t;
+    scanf("%f",&t);
+    printf("%.2f",100/t);
+    return 0;
+}
+
+####  Write a program that asks for user`s name and print Welcome NAME
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    char a[20];
+    scanf("%s",a);
+    printf("Welcome %s",a);
+
+    return 0;
+}
+
+####  Wonder full choclate offer
+int main() {
+    int D,N,C;
+    scanf("%d%d%d",&C,&N,&D);
+    //number of choclates left after n days
+    printf("%d",C+N*D-N);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+####  // You are given time = 2 Years. You have to take Principal Amount P and rate R from user and calculate and print compound interest.
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int P, R;
+    float CI;
+    scanf("%d", &P);
+    scanf("%d", &R);
+    CI = P * pow((1 + R / 100.0), 2);
+    CI=CI-P;
+    printf("%.2f", CI);
+    return 0;
+} 
+
+#### Simple Intrest 6
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int P,R,T;
+    scanf("%d%d%d",&P,&R,&T);
+    printf("%d",((P*R*T)/100)+P);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+####  Ant consequences
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int C,K,N;
+    scanf("%d%d%d",&C,&K,&N);
+    printf("%0.0f",pow(K,N)*C);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+####  Encoded Name
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+        int W1,W2,W3,W4,W5;
+        scanf("%d&%d&%d&%d&%d",&W1,&W2,&W3,&W4,&W5);
+        printf("%c%c%c%c%c",W1,W2,W3,W4,W5);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+####  Leap Year 2
+
+#include <stdio.h>
+int main()
+{
+    int n, i;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        if (i % 400 == 0)
+        {
+            printf("%d ", i);
+        }
+        else if (i % 4 == 0 && i % 100 != 0)
+        {
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
